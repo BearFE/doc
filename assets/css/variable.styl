@@ -1,0 +1,47 @@
+$MQMax = 1400px
+$MQLarge = 1200px
+$MQNarrow = 959px
+$MQMobile = 768px
+$MQMobileNarrow = 419px
+
+$accentColor = #25a2ff
+$textColor = #333
+$borderColor = #eaecef
+$codeBgColor = #333
+
+$grayBgColor = #f1f1f1
+$secondaryColor = #666
+$iconBgColor = #20adff
+
+>>> .btn
+    display inline-block
+    border solid 2px
+    line-height 50px
+    text-align center
+    padding 0 30px
+    border-radius 4px
+    font-size 28px
+    font-weight normal
+    color #fff
+    transition all .3s
+
+    &-plain
+        border-color #fff
+
+    &-primary
+        background $accentColor
+        border-color $accentColor
+
+        &:hover
+            background darken($accentColor, 10%)
+            border-color darken($accentColor, 10%)
+
+    &-plain-primary
+        color $accentColor
+        border none
+
+        &:hover
+            background darken($accentColor, 10%)
+            border-color darken($accentColor, 10%)
+            color #fff
+            

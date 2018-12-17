@@ -1,0 +1,89 @@
+.home-layout#media-query
+    @media (max-width: $MQMobile)
+        >>>.main-banner
+            height 320px
+
+            &:after
+                background-position center left -160px
+
+            > .introduction
+                left 50%
+                transform translate(-50%, -50%)
+                width 95%
+                text-align center
+
+                .title
+                    margin 0
+
+                .desc
+                    font-size 1.6rem
+
+                .start
+                    margin-top .5rem
+                    font-size 1.6rem
+                    padding 0 1.2rem
+                    line-height 3rem
+
+        .menu-bar
+            font-size 1rem
+
+            &-wrapper
+                line-height 50px
+                height 50px
+
+            .b-icon
+                font-size .8rem
+                padding 3px
+
+            .caption
+                font-size .6rem
+
+        .content-item
+            flex-direction column
+            padding 2rem 1rem
+            align-items flex-start
+
+            .item-info .wrapper
+                min-height unset
+
+                .icon
+                    display none
+
+                .title
+                    font-size 1.2rem
+
+                .desc
+                    font-size .875rem
+                    line-height 1.5
+
+            .dynamic-content
+                width 100%
+                margin-top 2rem
+                padding-top 60%
+
+        >>>.main-footer
+            .menu
+                display flex
+                flex-flow column nowrap
+
+                .menu-item
+                    font-size 1.2rem
+                    margin 0 10px
+                    padding 10px 0
+
+            .accelerate
+                align-items center
+                justify-content center
+                font-size 1rem
+
+                .logo
+                    width 10rem
+                    margin-bottom 1rem
+
+                .info
+                    display flex
+                    flex-flow column nowrap
+                    align-items center
+
+                &-visit
+                    display none

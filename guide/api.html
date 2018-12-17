@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>API | bEnd</title>
+    <meta name="description" content="Vue 驱动的插拔式B端服务方案，让B端平台用户降低理解成本，简化操作步骤，缩短跳转流程，从而快捷、方便、个性、定制化地享受线上运营服务">
+    <link rel="icon" href="/doc/logo.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/doc/assets/css/0.styles.43f38720.css" as="style"><link rel="preload" href="/doc/assets/js/app.ed6ab89f.js" as="script"><link rel="preload" href="/doc/assets/js/9.02210b8d.js" as="script"><link rel="prefetch" href="/doc/assets/js/10.591520bb.js"><link rel="prefetch" href="/doc/assets/js/11.47b6daf6.js"><link rel="prefetch" href="/doc/assets/js/12.509b4656.js"><link rel="prefetch" href="/doc/assets/js/2.19416b91.js"><link rel="prefetch" href="/doc/assets/js/3.b903661c.js"><link rel="prefetch" href="/doc/assets/js/4.8530056b.js"><link rel="prefetch" href="/doc/assets/js/5.6f861260.js"><link rel="prefetch" href="/doc/assets/js/6.8b9bfe9c.js"><link rel="prefetch" href="/doc/assets/js/7.9ed4315b.js"><link rel="prefetch" href="/doc/assets/js/8.c9f56ee9.js">
+    <link rel="stylesheet" href="/doc/assets/css/0.styles.43f38720.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/doc/" class="home-link router-link-active"><!----> <span class="site-name">bEnd</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/doc/" class="nav-link">首页</a></div><div class="nav-item"><a href="/doc/guide/" class="nav-link router-link-active">指南</a></div><div class="nav-item"><a href="https://github.com/bearFE/bend" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/doc/" class="nav-link">首页</a></div><div class="nav-item"><a href="/doc/guide/" class="nav-link router-link-active">指南</a></div><div class="nav-item"><a href="https://github.com/bearFE/bend" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>指南</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/doc/guide/" class="sidebar-link">介绍</a></li><li><a href="/doc/guide/start.html" class="sidebar-link">起步</a></li><li><a href="/doc/guide/api.html" class="active sidebar-link">API</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/doc/guide/api.html#联调配置" class="sidebar-link">联调配置</a></li><li class="sidebar-sub-header"><a href="/doc/guide/api.html#同步数据api" class="sidebar-link">同步数据API</a></li><li class="sidebar-sub-header"><a href="/doc/guide/api.html#插件list" class="sidebar-link">插件list</a></li><li class="sidebar-sub-header"><a href="/doc/guide/api.html#插件info" class="sidebar-link">插件info</a></li><li class="sidebar-sub-header"><a href="/doc/guide/api.html#添加插件" class="sidebar-link">添加插件</a></li><li class="sidebar-sub-header"><a href="/doc/guide/api.html#删除插件" class="sidebar-link">删除插件</a></li><li class="sidebar-sub-header"><a href="/doc/guide/api.html#菜单" class="sidebar-link">菜单</a></li></ul></li><li><a href="/doc/guide/sdk.html" class="sidebar-link">SDK</a></li><li><a href="/doc/guide/third.html" class="sidebar-link">第三方接入方案</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="api"><a href="#api" aria-hidden="true" class="header-anchor">#</a> API</h1> <h2 id="联调配置"><a href="#联调配置" aria-hidden="true" class="header-anchor">#</a> 联调配置</h2> <p>开发环境支持本地数据mock，远程代理，以及远程发布</p> <p>1、mock 文件支持 js 和 json两种格式（具体格式参考 mock 下的文件），json 格式为静态数据，js 格式可模拟后端交互。</p> <p>2、远程代理，异步数据支持远程代理，具体配置如下</p> <p>先配置'config/proxy.js', 数据请求需要转发的server端机器地址，支持域名、ip、机器名访问</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    hosts<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        test<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 远程代理（数据转发），只要配置proxy字段即可，数据请求需要转发的server端机器地址，支持域名、ip、机器名访问</span>
+            proxy<span class="token punctuation">:</span> <span class="token string">'http://bend.com:8500'</span><span class="token punctuation">,</span>
+            receiver<span class="token punctuation">:</span> <span class="token string">'http://bend.com:8500/receiver.php'</span><span class="token punctuation">,</span>
+            path<span class="token punctuation">:</span> <span class="token string">'/home/users/bend/data'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    use<span class="token punctuation">:</span> <span class="token string">'test'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>然后配置mock下需要转发接口的'fullback'值为'true'，如获取插件list api</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        code<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        msg<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+        <span class="token comment">// 如需代理到远程机器，只要配置为true即可，如只要访问本地mock数据则配置为false</span>
+        fullback<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            total<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+            pn<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            ps<span class="token punctuation">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+            list<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                pluginId<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+                name<span class="token punctuation">:</span> <span class="token string">'bEnd插件'</span><span class="token punctuation">,</span>
+                desc<span class="token punctuation">:</span> <span class="token string">'bEnd解决方案，让B端平台用户降低理解成本，简化操作步骤，缩短跳转流程，从而快捷、方便、个性、定制化地享受线上运营服务'</span><span class="token punctuation">,</span>
+                avatar<span class="token punctuation">:</span> <span class="token string">'http://www.ld12.com/upimg358/allimg/c150617/143452O0515030-31O50.jpg'</span><span class="token punctuation">,</span>
+                isAdd<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                relApplies<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                    id<span class="token punctuation">:</span> <span class="token string">'1'</span><span class="token punctuation">,</span>
+                    desc<span class="token punctuation">:</span> <span class="token string">'完成bEnd认证'</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    id<span class="token punctuation">:</span> <span class="token string">'2'</span><span class="token punctuation">,</span>
+                    desc<span class="token punctuation">:</span> <span class="token string">'注册bEnd高级认证用户'</span>
+                <span class="token punctuation">}</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>3、发布到远程机器，配置如下，支持watch</p> <p>server端配置 https://github.com/fex-team/receiver 或 receiver.php，'receiver.php'脚本文件可以在项目根目录中找到；</p> <p>前端配置'config/proxy.js'，如下：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    hosts<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        test<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            proxy<span class="token punctuation">:</span> <span class="token string">'http://bend.com:8500'</span><span class="token punctuation">,</span>
+            <span class="token comment">// 发布依赖脚本，部署到远程机器上，可访问到即可，部署路径不限制，比如部署到odp环境static下面。</span>
+            receiver<span class="token punctuation">:</span> <span class="token string">'http://bend.com:8500/receiver.php'</span><span class="token punctuation">,</span>
+            <span class="token comment">// 静态资源及模版发布路径，与线上一致</span>
+            path<span class="token punctuation">:</span> <span class="token string">'/home/users/bend/data'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    use<span class="token punctuation">:</span> <span class="token string">'test'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>配置完成后，执行命令即可从本地动态发布到远程机器上，每次本地变更存储文件后动态rebuild，即watch</p> <div class="language-shell extra-class"><pre class="language-text"><code>npm run deploy test
+</code></pre></div><h2 id="同步数据api"><a href="#同步数据api" aria-hidden="true" class="header-anchor">#</a> 同步数据API</h2> <p>接口地址： /home ，访问的是'mock/home.json'文件，后续如是，不在赘述</p> <p>接口参数： 同步数据，无</p> <p>返回示例：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    
+    // 状态码
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    // 状态返回信息
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;success&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        // 用户信息
+        <span class="token property">&quot;userInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            // 用户名称
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;userName&quot;</span><span class="token punctuation">,</span>
+            // 头像
+            <span class="token property">&quot;avatar&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://www.ld12.com/upimg358/allimg/c150617/143452O0515030-31O50.jpg&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        // 菜单信息
+        <span class="token property">&quot;menu&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;pluginList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                // 插件唯一标识
+                <span class="token property">&quot;routerName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;example&quot;</span><span class="token punctuation">,</span>
+                // 插件中文名称
+                <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;插件&quot;</span><span class="token punctuation">,</span>
+                // 插件头图
+                <span class="token property">&quot;avatar&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h2 id="插件list"><a href="#插件list" aria-hidden="true" class="header-anchor">#</a> 插件list</h2> <p>页面预览： /pluginlist</p> <p>接口地址： /plugin/list</p> <p>接口参数：</p> <table><thead><tr><th>参数</th> <th style="text-align:left">类型</th> <th style="text-align:left">是否必须</th> <th style="text-align:left">描述</th></tr></thead> <tbody><tr><td>ps</td> <td style="text-align:left">int</td> <td style="text-align:left">是</td> <td style="text-align:left">每页显示多少条</td></tr> <tr><td>pn</td> <td style="text-align:left">int</td> <td style="text-align:left">是</td> <td style="text-align:left">当前第几页</td></tr></tbody></table> <p>返回示例：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 状态码</span>
+        code<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token comment">// 状态信息</span>
+        msg<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+        <span class="token comment">// 如需代理到远程机器，只要配置为true即可，如只要访问本地mock数据则配置为false</span>
+        fullback<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 总共多少条</span>
+            total<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+            <span class="token comment">// 当前第几页</span>
+            pn<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token comment">// 每页显示多少条</span>
+            ps<span class="token punctuation">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+            <span class="token comment">// 菜单list</span>
+            list<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                <span class="token comment">// 插件id</span>
+                pluginId<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+                <span class="token comment">// 插件中文名称</span>
+                name<span class="token punctuation">:</span> <span class="token string">'bEnd插件'</span><span class="token punctuation">,</span>
+                <span class="token comment">// 插件描述</span>
+                desc<span class="token punctuation">:</span> <span class="token string">'bEnd解决方案，让B端平台用户降低理解成本，简化操作步骤，缩短跳转流程，从而快捷、方便、个性、定制化地享受线上运营服务'</span><span class="token punctuation">,</span>
+                <span class="token comment">// 插件头图</span>
+                avatar<span class="token punctuation">:</span> <span class="token string">'http://www.ld12.com/upimg358/allimg/c150617/143452O0515030-31O50.jpg'</span><span class="token punctuation">,</span>
+                <span class="token comment">// 插件是否已经添加，0:未条件，1:已添加</span>
+                isAdd<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token comment">// 插件添加条件</span>
+                relApplies<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                    id<span class="token punctuation">:</span> <span class="token string">'1'</span><span class="token punctuation">,</span>
+                    desc<span class="token punctuation">:</span> <span class="token string">'完成bEnd认证'</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    id<span class="token punctuation">:</span> <span class="token string">'2'</span><span class="token punctuation">,</span>
+                    desc<span class="token punctuation">:</span> <span class="token string">'注册bEnd高级认证用户'</span>
+                <span class="token punctuation">}</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="插件info"><a href="#插件info" aria-hidden="true" class="header-anchor">#</a> 插件info</h2> <p>页面预览： //pluginlist/detail?id=1</p> <p>接口地址： /plugin/info</p> <p>接口参数：</p> <table><thead><tr><th>参数</th> <th style="text-align:left">类型</th> <th style="text-align:left">是否必须</th> <th style="text-align:left">描述</th></tr></thead> <tbody><tr><td>pluginId</td> <td style="text-align:left">int</td> <td style="text-align:left">是</td> <td style="text-align:left">插件id</td></tr></tbody></table> <p>返回示例：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> result <span class="token operator">=</span> <span class="token punctuation">{</span>
+        code<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        msg<span class="token punctuation">:</span> <span class="token string">'success'</span><span class="token punctuation">,</span>
+        fallback<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 插件id</span>
+            pluginId<span class="token punctuation">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+            <span class="token comment">// 插件唯一标识</span>
+            routerName<span class="token punctuation">:</span> <span class="token string">'example'</span><span class="token punctuation">,</span>
+            <span class="token comment">// 插件中文名称</span>
+            name<span class="token punctuation">:</span> <span class="token string">'插件名称'</span><span class="token punctuation">,</span>
+            <span class="token comment">// 插件描述</span>
+            desc<span class="token punctuation">:</span> <span class="token string">'bEnd解决方案，让B端平台用户降低理解成本，简化操作步骤，缩短跳转流程，从而快捷、方便、个性、定制化地享受线上运营服务'</span><span class="token punctuation">,</span>
+            <span class="token comment">// 功能介绍</span>
+            introduction<span class="token punctuation">:</span> <span class="token string">'bEnd解决方案，让B端平台用户降低理解成本，简化操作步骤，缩短跳转流程，从而快捷、方便、个性、定制化地享受线上运营服务'</span><span class="token punctuation">,</span>
+            <span class="token comment">// 声明</span>
+            statement<span class="token punctuation">:</span> <span class="token string">'请勿使用模板发送色情低俗、暴力血腥、政治谣言等各类违反法律法规及相关政策规定的信息'</span><span class="token punctuation">,</span>
+            <span class="token comment">// 插件头图</span>
+            avatar<span class="token punctuation">:</span> <span class="token string">'http://www.ld12.com/upimg358/allimg/c150617/143452O0515030-31O50.jpg'</span><span class="token punctuation">,</span>
+            <span class="token comment">// 插件是否已经添加，0:未条件，1:已添加</span>
+            isAdd<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token comment">// 用户是否有权限添加，看业务场景是否需要</span>
+            enableAdd<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token comment">// 插件依赖，看业务场景是否需要</span>
+            relPlugins<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>id<span class="token punctuation">:</span> <span class="token string">'1'</span><span class="token punctuation">,</span> desc<span class="token punctuation">:</span> <span class="token string">'依赖info插件'</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token comment">// 添加条件，看业务场景是否需要</span>
+            relApplies<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                id<span class="token punctuation">:</span> <span class="token string">'1'</span><span class="token punctuation">,</span>
+                desc<span class="token punctuation">:</span> <span class="token string">'完成bEnd认证'</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                id<span class="token punctuation">:</span> <span class="token string">'2'</span><span class="token punctuation">,</span>
+                desc<span class="token punctuation">:</span> <span class="token string">'注册bEnd高级认证用户'</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="添加插件"><a href="#添加插件" aria-hidden="true" class="header-anchor">#</a> 添加插件</h2> <p>页面预览： //pluginlist/detail?id=1, 点击添加按钮</p> <p>接口地址： /plugin/add</p> <p>接口参数：</p> <table><thead><tr><th>参数</th> <th style="text-align:left">类型</th> <th style="text-align:left">是否必须</th> <th style="text-align:left">描述</th></tr></thead> <tbody><tr><td>pluginId</td> <td style="text-align:left">int</td> <td style="text-align:left">是</td> <td style="text-align:left">插件id</td></tr></tbody></table> <p>返回示例：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>   
+    // 添加成功示例
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;success&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;fallback&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="删除插件"><a href="#删除插件" aria-hidden="true" class="header-anchor">#</a> 删除插件</h2> <p>页面预览： //pluginlist/detail?id=1, 点击删除按钮</p> <p>接口地址： /plugin/del</p> <p>接口参数：</p> <table><thead><tr><th>参数</th> <th style="text-align:left">类型</th> <th style="text-align:left">是否必须</th> <th style="text-align:left">描述</th></tr></thead> <tbody><tr><td>pluginId</td> <td style="text-align:left">int</td> <td style="text-align:left">是</td> <td style="text-align:left">插件id</td></tr></tbody></table> <p>返回示例：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>   
+    // 删除成功示例
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;success&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;fallback&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="菜单"><a href="#菜单" aria-hidden="true" class="header-anchor">#</a> 菜单</h2> <p>页面预览： 左侧菜单</p> <p>接口地址： /plugin/menu</p> <p>接口参数：无</p> <p>返回示例：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        code<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        msg<span class="token punctuation">:</span> <span class="token string">'success'</span><span class="token punctuation">,</span>
+        fallback<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            total<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+            pn<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            ps<span class="token punctuation">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+            <span class="token comment">// 插件list</span>
+            pluginList<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                categoryId<span class="token punctuation">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+                name<span class="token punctuation">:</span> <span class="token string">'即插即用'</span><span class="token punctuation">,</span>
+                avatar<span class="token punctuation">:</span> <span class="token string">'http://www.ld12.com/upimg358/allimg/c150617/143452O0515030-31O50.jpg'</span><span class="token punctuation">,</span>
+                pluginId<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+                routerName<span class="token punctuation">:</span> <span class="token string">'example'</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/doc/guide/start.html" class="prev">
+          起步
+        </a></span> <span class="next"><a href="/doc/guide/sdk.html">
+          SDK
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/doc/assets/js/app.ed6ab89f.js" defer></script><script src="/doc/assets/js/9.02210b8d.js" defer></script>
+  </body>
+</html>
