@@ -1,6 +1,4 @@
-<a style="display:inline-block; height:120px" href="https://bearfe.github.io/doc/" target="_blank" >
-<img src="./bend.png">
-</a>
+[![bend](./bend_small.jpg)](https://bearfe.github.io/doc/)
 
 ### 基于Vue.js的即插即用式B端解决方案
 
