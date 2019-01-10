@@ -2,8 +2,6 @@
 <img src="./bend.png">
 </a>
 
----
-
 ### 基于Vue.js的即插即用式B端解决方案
 
 - bEnd-cli快速构建开发框架
